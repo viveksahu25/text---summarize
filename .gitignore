@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+
+.venv/
+venv/
+env/
+
+.ipynb_checkpoints/
+
+saved_summary_model/
+*.zip
+
+samsum-train.csv
+samsum-test.csv
+samsum-validation.csv
+
+.env
