@@ -17,9 +17,10 @@ BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 #  model & tokenizer
- 
-model = T5ForConditionalGeneration.from_pretrained("./saved_summary_model")
-tokenizer = T5Tokenizer.from_pretrained("./saved_summary_model")
+
+MODEL_ID = "viveksahu25/text-summarize-model" 
+model = T5ForConditionalGeneration.from_pretrained(MODEL_ID)
+tokenizer = T5Tokenizer.from_pretrained(MODEL_ID)
 
 #  device 
 
